@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row" >
+       
+        
+        
+            <div class="col-md-4 col-sm-12 " *ngFor="let x of hm2">
+            
+                
+              
+            
+           
+            <div [id]="x.id">
+                <div class="card" style="width: 220px;height:290px;border-radius: 20px;">
+                    <img [src]="x.photo" class="card-img-top"style=" width: 350px;height:200px;background-color:  ">
+                   
+                    <div style="background-color:rgb(231, 224, 224);position:relative; top:15px;border-radius: 10px;width:350px">
+                    <div class="card-body" >
+                      <h5 class="card-title">Card title</h5>
+                      
+                      <p class="card-text">{{x.nom}} </p>
+                      
+                      <a href="#" class="btn btn-warning" style="color:aliceblue;position:relative;right:15px;" >ADD TO CARTE</a><div>{{x.stock}}</div>
+                     
+                      
+                      <img *ngIf="x.promo" src="https://www.certyou.com/i/cliparts/bandeau-promo.png"style="position: relative;width:50px;top:-365px;right:15px;"id={{x.desc}} >
+    
+                    
+                      
+                    </div>
+                </div>
+                   
+                    </div>
+                    <br>
+                    <br> 
+                </div>
+                </div>
+    
+              
+           <p>qsdqsdsqd</p>
+                  
+                  
+        
+    
+        
+    
+    </div>
+    
+    </div>

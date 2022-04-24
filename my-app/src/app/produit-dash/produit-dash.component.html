@@ -1,0 +1,43 @@
+
+    
+<div class="container-fluid">
+    <div class="row">
+<table class="col-12" style="position:relative;right:20px;">
+        
+    <tr style="position: relative;
+    right: -55px;">
+        <td>id</td>
+        <td>name</td>
+        <td >stock</td>
+        <td class="col-6">categorie</td>
+       
+    </tr>
+    
+        </table>
+
+        <br>
+        <br>
+</div>
+
+<div  class="col" *ngFor="let x of pd">
+<div class="row">
+    <input class="col-1" placeholder="{{x.id}} " >
+    <input class="col-2" placeholder="{{x.nom}}">
+    <input class="col" placeholder="{{x.stock}}">
+    <input class="col" placeholder="{{x.categorie}}">
+
+
+    <div class="col-2"><input type="button" class="btn btn-success" value="savechanges"></div>
+    <div class="col"><input type="button" class="btn btn-danger" value="Delete"></div>
+</div>   
+<hr> 
+<br>
+
+
+
+
+</div>
+</div>
+
+
+

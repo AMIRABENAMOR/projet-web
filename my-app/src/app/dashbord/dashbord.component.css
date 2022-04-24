@@ -1,0 +1,52 @@
+
+#bar 
+{
+   height: 700px;;
+}
+li:hover{
+    color:rgb(209, 184, 104);
+
+}
+#nav
+ {
+    background-color: rgb(22, 22, 22);
+ }
+ .sidenav
+ {
+     position: relative;
+     right:50px;
+    
+     background-color: rgba(0,0,0,0.8);
+     width:300px;
+     border-radius: 5px;
+     height: 800px;
+ }
+ .opt
+ {
+     color:black;
+ }
+ #cd
+ {
+    height: 40px;
+ }
+
+ #icone
+ {
+     width:80px;
+   
+ }
+ #show
+{
+    transform: rotate(180deg);
+    width:30px;
+    border-radius: 50px;
+    background-color: beige;
+}
+
+#info
+ {
+
+    height:100px ;
+    width:500px;
+ }
+ 

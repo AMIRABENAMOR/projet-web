@@ -1,0 +1,87 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="btn-group col-1" style=" text-decoration: none;"id="list">
+        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Product
+        </button>
+        <ul class="dropdown-menu" style="font-family: 'Lobster', cursive; width:50px;">
+        <li><a routerLink="/stiwar" style="color:black;background-color:linear-gradient(to bottom right,#7A7FBA,#11C37C);">Stiwar</a></li>
+        <hr>
+         <li><a routerLink="/shampo"style="color:black">Shampo</a></li>
+         <hr>
+         <li><a routerLink="/toys"style="color:black">Toys</a></li>
+         <hr>
+         <li><a routerLink="/shopcr"style="color:black" >Crokette</a></li>
+         <hr>
+         <li><a routerLink="/brosse"style="color:black">Brosse</a></li>
+         
+        </ul>
+      </div>
+    </div>
+    </div>
+  
+  <div class="container">
+    
+  <div class="row">
+    <div class="col-3 offset-9">
+
+      <div class="input-group flex-nowrap">
+        <span  class="input-group-text" id="addon-wrapping"><img  src="http://cdn.onlinewebfonts.com/svg/img_573958.png" style="width:10px;height: 10px;"></span>
+        <input #b  type="text" class="form-control" placeholder="sherch" aria-label="Username" aria-describedby="addon-wrapping" (keyup)="chercher(b)" >
+      </div>
+      </div>
+      <br>
+      <br>
+  </div>  
+    <div class="row" >
+       
+        
+        
+            <div class="col-md-4 col-sm-12 " *ngFor="let x of pd">
+              
+            
+              
+         
+  
+            <div [id]="x.id">
+                <div class="card" style="width: 220px;height:290px;border-radius: 20px;">
+                    <img [src]="x.photo" class="card-img-top"style=" width: 350px;height:200px;background-color:  ">
+                   
+                    <div style="background-color:rgb(231, 224, 224);position:relative; top:15px;border-radius: 10px;width:350px">
+                    <div class="card-body" >
+                      <h5 class="card-title">Card title</h5>
+                      
+                      <p class="card-text">{{x.nom}} </p>
+                      
+                      <a #add  class="btn btn-warning" style="color:aliceblue;position:relative;right:15px;" [id]="x.id" (click)="envoyer(x)"  >ADD TO CARTE</a><div>{{x.price}}DT</div><p><button #bt  class="btn btn-outline-secondary rg"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"  *ngIf="x.promo=='true'" [id]="x.desc"(click)="myevent(bt)">Promo?</button>
+                    </p>
+                     
+                      
+                     
+    
+                      
+                    
+                      
+                    </div>
+                </div>
+                   
+                    </div>
+                    <br>
+                    <br> 
+                </div>
+                <br>
+                
+                </div>
+    
+              
+                  
+                  
+        
+    
+        
+    
+    </div>
+    
+    
+    </div>
+ 

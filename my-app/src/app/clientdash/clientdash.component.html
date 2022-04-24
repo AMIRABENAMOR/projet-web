@@ -1,0 +1,45 @@
+
+    
+<div class="container">
+   
+    <div class="row">
+<table class="col-12" style="position:relative;right:20px;">
+        
+    <tr style="position: relative;
+    right: -55px;">
+        <td>Product</td>
+        <td>Name</td>
+        <td>email</td>
+        <td>Mot de passe</td>
+       
+    </tr>
+    
+        </table>
+
+        <br>
+        <br>
+</div>
+
+<div  class="col" *ngFor="let x of cc">
+<div class="row">
+    <img [src]="x.photo" class="col-1" style="width:100px;">
+    <input [id]="x.id+'nom'" class="col-1" placeholder="{{x.nom}} " >
+    <input [id]="x.id+'stock'" class="col-2" placeholder="{{x.stock}}">
+    <input [id]="x.id+'iv'" class="col" placeholder="{{x.invalide}}">
+
+
+
+    <div class="col-2"><input #bts (click)="modifier(bts.id)" [id]="x.id" type="button"  class="btn btn-secondary" value="savechanges"> <img src="https://th.bing.com/th/id/OIP.zZfISlbDWRgyzrb8hJ1-pwHaHa?w=173&h=180&c=7&r=0&o=5&pid=1.7" style="width:10px;"> </div>
+    <div class="col"><input #bt (click)="supra(bt.id)" type="button" [id]="x.id" class="btn btn-danger" value="Delete"> <img src="https://th.bing.com/th/id/R.27299b1faed2d63a3e9512bd8cd187ad?rik=%2fVRT3CdCaWVC3w&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fdelete-button-png-delete-icon-1600.png&ehk=mRIiUoExO9FPzeoYwqDk%2bfWDlxlcYGmfTbaQ2Pbwyak%3d&risl=&pid=ImgRaw&r=0" style="width:20px;"></div>
+</div>   
+<hr> 
+<br>
+
+
+
+
+</div>
+</div>
+
+
+

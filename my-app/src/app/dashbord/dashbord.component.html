@@ -1,0 +1,87 @@
+<div class="container-fluid" style="background-color: rgb(236, 229, 229); height: 800px;">
+  
+
+
+    <div class="col-12 card" style="width:1800px;height:50px;position:relative;right:15px; background-color: rgb(197, 207, 209);">
+    <div class="row">
+        <div class="col-1"> <img src="https://th.bing.com/th/id/R.529a7f10b526f2f1bcf6da4ae6975399?rik=sYcAkVLcM93pPw&riu=http%3a%2f%2fmiratech.fr%2fv5bis%2fwp-content%2fuploads%2f2014%2f06%2fparametre.png&ehk=nmhav3x39%2bV843x2uXTt2Q0qRjyn6ztwELgN0E88eKM%3d&risl=&pid=ImgRaw&r=0"  style="width:50px;"> 
+    </div>
+
+    <div class="col-3" style="position: relative;right: 100px;">CoolAdmin</div>
+
+
+</div>
+
+
+</div>
+
+
+<div class="col-sm-3 col-4 card" id="sidebar" style="width:200px;position: relative;right: 12px;height: 700px;" >
+    
+    <div class="row">
+        <div class="col-2 offset-1"><img src="https://th.bing.com/th/id/R.710168ecf51b3c723672ca26ae7b9ba0?rik=66J%2b0tXOBn6Xng&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_195082.png&ehk=fy1JwTUy%2fRc3hKeu5H0TBifjAD3vhj04NZy%2bbW%2f5QOg%3d&risl=&pid=ImgRaw&r=0" style="width:30px;"></div>
+        <div class="col-6"><a style="position: relative;right: -10px; text-decoration: none; color:black" href="">Dashbord</a></div>
+        </div>
+
+<br>
+<div class="row">
+<div class="col-2 offset-1"><img src="https://th.bing.com/th/id/R.cbb11b8478bde2e558849b4f6690e90d?rik=nALfzWZT4rozEg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_549425.png&ehk=ABOcFicu9JGQW4CLK1M7pBTYKKzt1yyCvdBKYfbjPvc%3d&risl=&pid=ImgRaw&r=0" style="width:30px;"></div>
+<div class="col-4"><a style="position: relative;right: -20px;text-decoration: none; color:black" href="">users</a></div>
+</div>
+<br>
+
+<br>
+<div class="row">
+    </div>
+</div>
+
+<div class="row" style=" position: relative;top:-620px; right: -300px;">
+<div class="col-3" style="height: 100px;border-radius: 10px;background-color:rgb(194, 229, 227);
+
+">
+    <img src="https://cdn.onlinewebfonts.com/svg/img_298524.png"style="width:20px;position:relative;top:20px;">
+
+<div style="position:relative;right: -70px;">1200</div>
+</div>
+
+
+<div class="col-3 offset-1" style="height: 100px;border-radius: 10px;background-color:rgb(190, 219, 186);
+
+">
+    <img src="https://th.bing.com/th/id/R.57fb9aa8d7f8cbe036962181701cec6e?rik=xfK9dEUw4oYvOQ&riu=http%3a%2f%2fwww.icone-png.com%2fpng%2f38%2f37731.png&ehk=wFMNH%2bP7wKBQtH%2fUSJ0mV%2bLSwzk%2fGzqm8wCHtAcZgO8%3d&risl=&pid=ImgRaw&r=0"style="width:20px;position:relative;top:20px;">
+
+<div style="position:relative;right: -70px;">1200</div>
+</div>
+</div>
+
+<i>List of Admin</i>
+<div class="row " style="position: relative;right: -250px;top:-400px;">
+    <div class="row" style="background-color: rgb(16, 21, 31);">
+        <div class="col-3" style="color:white;">EMAIL</div>
+        <div class="col-3"style="color:white;">PASSWORD</div>
+        <div class="col-3"style="color:white;">nbanimale</div>
+    </div>
+<div class="row " *ngFor="let x of admin" style="background-color:rgba(144, 169, 180, 0.5)">
+    <div #email class="col-sm-3"><input type="text" [placeholder]="x.email" style="border-radius:10px;width:150px;"[id]="x.email+'e'"></div>
+  
+    <div #password class="col-sm-3"><input type="text" [placeholder]="x.password" style="border-radius:10px;width:150px;"[id]="x.email+'p'"></div>
+    <div class="col-sm-3 col-md-2"><input type="text" [placeholder]="x.nbanimale" style="border-radius:10px;width:50px;"></div>
+    <div class="col-sm-2 col-md-1"><input #bt type="button" class="btn btn-danger" [id]="x.email" placeholder="DELETE" (click)="supression(bt.id)"></div>
+    <div class="col-sm-3 col-md-1"><input #bt2 type="button" class="btn btn-success" [id]="x.email" placeholder="SAVE" [name]="x.password" (click)="modifier(bt2.id)"></div>
+
+    <br>
+    <hr>
+    
+    
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+

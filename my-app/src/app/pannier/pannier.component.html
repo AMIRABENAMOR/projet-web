@@ -1,0 +1,60 @@
+<div class="container-fluid">
+    <div clas="row">
+        <header>Shoping Cart</header>
+    <table class="col-12">
+        
+<tr style="position: relative;
+right: -55px;">
+    <td>product</td>
+    <td>Name</td>
+    <td>quantity</td>
+    <td>price</td>
+    <td>total</td>
+</tr>
+
+    </table>
+<div class="col-12 " *ngFor="let x of fact">
+    <br>
+    
+<div  class="row" [id]="x.idprd">
+    <hr>
+
+   
+     <div class="col-md-3 col-4 " [id]="x.idprd"> 
+         
+         <img  [src]="x.photo" style="width:200px;position: relative;right:30px;"></div>
+      <div class="col-3" style="position: relative;right: 5px;" >{{x.name}}
+          <p>{{x.nom}}</p>
+      </div> 
+      
+     
+      <div class="col-3"><input [id]="x.id+qt"  placeholder="1" style="width: 20px; position:  relative; right: 20px;"></div>
+      <div class="col-3"><input  placeholder={{x.price}} style="width: 20px; position:  relative; right: 20px;"></div>
+
+           
+            
+  
+
+  
+    
+</div> 
+<div class="col "><button #btn  [name]="x.id" (click)="addfact(btn.name)" type="button" class="btn btn-primary btn-lg btn-block"style="width:100px;" >Facture</button>
+
+</div>
+
+<br>
+<br>
+<br>
+       
+          
+         
+
+        
+        
+          
+    </div>
+   
+        <br>
+        <br> 
+    </div>
+

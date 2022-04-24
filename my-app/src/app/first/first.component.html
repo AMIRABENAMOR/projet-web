@@ -1,0 +1,57 @@
+<h1>page2</h1>
+<div class="container">
+    <div class="row" >
+       
+        
+        
+            <div class="col-md-4 col-sm-12 " *ngFor="let x of laccess">
+            
+                
+              
+            
+           
+            <div [id]="x.id">
+                <div class="card" style="width: 220px;height:320px;border-radius: 20px;">
+                    <img [src]="x.photo" class="card-img-top"style=" width: 350px;height:200px;background-color:  ">
+                    <div style="background-color:rgb(231, 224, 224);position:relative; top:15px;border-radius: 10px;width:350px">
+                    <div class="card-body" >
+                      <h5 class="card-title">Card title</h5>
+                      
+                      <p class="card-text">{{x.nom}} </p>
+                      
+                      <a href="#" class="btn btn-warning" style="color:aliceblue">ADD TO CARTE</a><div>{{x.stock}}</div>
+                     
+                      
+                      
+    
+                    
+                      
+                    </div>
+                </div>
+                   
+                    </div>
+                    <br> 
+                </div>
+                </div>
+    
+                <div *ngIf="va">
+                    {{reclame()}}
+                    
+                </div>
+                    
+           
+                  
+                  
+        <div style="background-color: black; position:relative;right:-20px">
+            <input type="radio" name="1">
+            <input type="radio" name="1">
+            <input type="radio" name="1">
+        </div>
+               
+          
+    
+        
+    
+    </div>
+    
+    </div>
