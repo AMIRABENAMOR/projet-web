@@ -23,6 +23,7 @@ import { LoginComponent } from './login/login.component';
 import { InscrireComponent } from './inscrire/inscrire.component';
 import { HmComponent } from './hm/hm.component'
 
+
 @NgModule({
   declarations: [
     AppComponent,

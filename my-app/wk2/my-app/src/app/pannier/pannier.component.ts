@@ -73,6 +73,8 @@ addquantity(bt:any)
 {
   let ch=bt+'qt';
   alert(ch);
+
+  
   
 
 

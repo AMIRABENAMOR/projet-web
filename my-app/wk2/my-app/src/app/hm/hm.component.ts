@@ -34,7 +34,8 @@ this.data={'nom':nom,
 'datedeb':datedeb,
 'datef':datef,
 'client':localStorage.getItem('email'),
-'carnet':"http//carnet/sd//"};
+'carnet':"http//carnet/sd//",
+"animale":"dog"};
 
 
 fetch('http://localhost/api/reservation.php',{
@@ -50,6 +51,26 @@ fetch('http://localhost/api/reservation.php',{
  
 
 
+}
+da:any;
+em:any;
+inscrire()
+{
+ this.em=document.getElementById('email'); 
+ var m=this.em.value;
+ alert(m);
+ this.da={'email':m};
+  
+  fetch('http://localhost/api/newletter.php',{
+    method:'post',
+    body:JSON.stringify(this.da)
+  }).then((res)=>
+  {
+    return res.json();
+  }).then((res)=>
+  {
+      alert(JSON.parse(JSON.stringify(res)));
+  })
 }
 
 }

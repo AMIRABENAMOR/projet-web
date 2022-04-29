@@ -16,24 +16,33 @@ import { AboutComponent } from './about/about.component';
 import { HmComponent } from './hm/hm.component';
 import { ClientdashComponent } from './clientdash/clientdash.component';
 import { DashbordComponent } from './dashbord/dashbord.component';
+import { LoginComponent } from './login/login.component';
 //import { FirstComponent } from './first/first.component';
 
 const routes: Routes = [
-{path:'shop',component:SecondeaccessComponent},
+
+{path:'clnt',component:ClientdashComponent},
 {path:'shop3',component:FirstComponent},
 {path:'shop2',component:Hermess2Component},
 {path:'shopcr',component:CroketteComponent},
-{path:'panier',component:PannierComponent},
+
 {path:'brosse',component:BrosseComponent},
 {path:'toys',component:ToysComponent},
 {path:'shampo',component:ShampoComponent},
 {path:'stiwar',component:SecondeaccessComponent},
-{path:'team',component:TeamComponent},
+
+{path:'',component:LoginComponent},
+{path:'',component:Secondeaccess2Component,children:[
+{path:'shop',component:SecondeaccessComponent},
 {path:'about',component:AboutComponent},
-{path:'home',component:Secondeaccess2Component},
-  {path:'hm',component:HmComponent},
-  {path:'clnt',component:ClientdashComponent},
-  {path:'dash',component:DashbordComponent}
+{path:'home',component:HmComponent},
+{path:'panier',component:PannierComponent},
+{path:'team',component:TeamComponent},
+]},
+ 
+  
+  {path:'dash',component:DashbordComponent},
+
 ]
 
 @NgModule({
